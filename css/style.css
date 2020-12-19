@@ -378,16 +378,24 @@ header {
       background-repeat: no-repeat;
       background-position: 0% 50%;
       background-size: cover; }
-      #main .carousel .carousel-item .container {
-        height: 565px; }
-        #main .carousel .carousel-item .container .carousel-caption {
+      #main .carousel .carousel-item .container{
+          position: absolute;
+          z-index: 1;
           top: 50%;
           bottom: auto;
           -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+      }
+        #main .carousel .carousel-item .container .carousel-caption {
+          /* top: 50%;
+          bottom: auto;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
           left: auto;
-          right: auto;
-          text-align: left; }
+          right: auto; */
+          position: static;
+          text-align: left; 
+        }
           #main .carousel .carousel-item .container .carousel-caption h1 {
             font-size: 46px;
             line-height: 1.2; }
@@ -440,12 +448,7 @@ header {
   right: 130px; }
 
 .second-design #main {
-  height: 550px;
   margin-top: 116px; }
-  .second-design #main .carousel .carousel-item {
-    height: 550px; }
-    .second-design #main .carousel .carousel-item .container {
-      height: 550px; }
   .second-design #main .navs-slider {
     height: 550px; }
     .second-design #main .navs-slider .container {
@@ -1139,7 +1142,7 @@ footer {
 @media screen and (max-width: 1500px) {
   /* #main {
     height: 565px; } */
-    #main .carousel-item {
+    /* #main .carousel-item {
       height: 565px; }
       #main .carousel-item .container {
         height: 565px; }
@@ -1157,7 +1160,8 @@ footer {
     .second-design #main .navs-slider {
       height: 525px; }
       .second-design #main .navs-slider .container {
-        height: 525px; } }
+        height: 525px; }  */
+      }
 @media screen and (max-width: 1400px) {
   #about .back-wrapper .cover-about .content-wrap h1 {
     font-size: 32px;
