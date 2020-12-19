@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Tinos';
+    src: url("../fonts/tinos/tinos-regular.woff2") format("woff2"), url("../fonts/tinos/tinos-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+  
+@font-face {
+    font-family: 'Tinos';
+    src: url("../fonts/tinos/tinos-bold.woff2") format("woff2"), url("../fonts/tinos/tinos-bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+  
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/proxima/ProximaNova-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+  
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/proxima/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/proxima/ProximaNova-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'FTN_medium';
+    src: url('FTN55.eot');
+    src: local('☺'), url('../fonts/FTN55.woff') format('woff'), url('FTN55.ttf') format('truetype'), url('FTN55.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FTN_medium-italic';
+    src: url('FTN56.eot');
+    src: local('☺'), url('../fonts/FTN56.woff') format('woff'), url('FTN56.ttf') format('truetype'), url('FTN56.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FTN_demi';
+    src: url('FTN65.eot');
+    src: local('☺'), url('../fonts/FTN65.woff') format('woff'), url('FTN65.ttf') format('truetype'), url('FTN65.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FTN_heavy';
+    src: url('FTN75.eot');
+    src: local('☺'), url('../fonts/FTN75.woff') format('woff'), url('FTN75.ttf') format('truetype'), url('FTN75.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
