@@ -192,7 +192,35 @@ header {
   header nav .navbar-toggler {
     margin-right: 32px;
   }
-}
+  }
+  @media (min-width: 992px){
+    header nav .nav-links .nav-link{
+      color: #464646 !important;
+      background: #dbdbdb;
+      border-bottom: solid 1px #e1e1e2;
+    }
+    .dropdown-menu-wrap .dropdown-toggle::after {
+      background-image: url(../img/down-arrow.png);
+    }
+    header nav .nav-links .nav-link:before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 9px;
+    display: block;
+    background-color: #2da3a7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    }
+    header nav .nav-links .nav-link:hover:before {
+      width: 100%;
+    }
+    .nav-links{padding-bottom:37px}
+  }
   header nav .menu-wrap {
     width: 60px;
     height: 60px;
@@ -256,19 +284,8 @@ header {
     top: 40px;
     right: 15px;
     display: none; }
-  header nav #navbarMenu .nav-item .nav-link {
-    font-family: 'FTN_heavy';
-    font-size: 16px;
-    padding: 16px 12px;
-    text-transform: uppercase;
-    -webkit-transition: 300ms all ease;
-    -moz-transition: 300ms all ease;
-    -o-transition: 300ms all ease;
-    transition: 300ms all ease; }
-    header nav #navbarMenu .nav-item .nav-link:hover {
-      color: #bfbfbf; }
-  header nav #navbarMenu .nav-item.active .nav-link {
-    color: #bfbfbf; }
+  /* header nav #navbarMenu .nav-item.active .nav-link {
+    color: #bfbfbf; } */
   header nav #navbarMenu .nav-item.lang-mobile {
     display: none; }
   header nav .lang-wrapper {
@@ -1210,11 +1227,18 @@ footer {
       header nav #navbarMenu .navbar-nav li {
         display: block !important;
         position: relative; }
-        header nav #navbarMenu .navbar-nav li .nav-link {
-          color: #fff;
-          padding: 20px 37px !important; }
-          header nav #navbarMenu .navbar-nav li .nav-link:hover {
-            color: #fff; }
+          header nav #navbarMenu .nav-item .nav-link {
+            font-family: 'FTN_heavy';
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 37px !important;
+            text-transform: uppercase;
+            -webkit-transition: 300ms all ease;
+            -moz-transition: 300ms all ease;
+            -o-transition: 300ms all ease;
+            transition: 300ms all ease; }
+            header nav #navbarMenu .nav-item .nav-link:hover {
+              color: #bfbfbf; }
         header nav #navbarMenu .navbar-nav li.active .nav-link {
           color: #fff; }
         header nav #navbarMenu .navbar-nav li.lang-mobile {
