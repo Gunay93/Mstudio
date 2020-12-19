@@ -89,9 +89,9 @@ a {
       background-color: #fbfbf8; }
     .dropdown-menu-wrap .dropdown-menu .dropdown-item.active, .dropdown-menu-wrap .dropdown-menu .dropdown-item:active {
       background-color: transparent; }
-.dropdown-menu-wrap:hover .dropdown-toggle::after {
+/* .dropdown-menu-wrap:hover .dropdown-toggle::after {
   background: url("../img/down-arrow-grey.png") no-repeat;
-  background-size: 6px; }
+  background-size: 6px; } */
 
 .title-row {
   display: flex;
@@ -194,9 +194,19 @@ header {
   }
   }
   @media (min-width: 992px){
+    header nav .nav-links .nav-link:hover{
+      background: #dbdbdb;
+    }
+    header nav .nav-links .dropdown-menu{
+      margin:0;
+      box-shadow: none;
+    }
+    header nav .nav-links .dropdown-menu:before {
+      content: none;
+    }
     header nav .nav-links .nav-link{
       color: #464646 !important;
-      background: #dbdbdb;
+      background: #ececec;
       border-bottom: solid 1px #e1e1e2;
     }
     .dropdown-menu-wrap .dropdown-toggle::after {
@@ -1265,8 +1275,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999999999;
     overflow-y: hidden; }
-  .dropdown-menu-wrap:hover .dropdown-menu {
-    display: none; }
+  /* .dropdown-menu-wrap:hover .dropdown-menu {
+    display: none; } */
 
   #main .carousel-item .container .carousel-caption {
     width: 55%; }
